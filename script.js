@@ -85,7 +85,7 @@ function display_script() {
     // print pick
     document.write("<p>Your pick was: " + pick[0] + " and your lucky number was: " + pick[1] + "</p>");
     // print sorted pick and lucky ball
-    document.write("<p>Your pick sorted was: " + pick.sort((a,b) => a - b) + " and your lucky number was: " + pick[1] + "</p>");
+    document.write("<p>Your pick sorted was: " + pick.sort(function(a, b){return a - b}) + " and your lucky number was: " + pick[1] + "</p>");
     // print winning numbers and winning lucky ball
     document.write("<p>The winning numbers are: 12, 15, 24, 35, 48 and the lucky number is: 3</p>");
     var matches = num_matches(pick);
