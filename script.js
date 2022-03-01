@@ -96,3 +96,5 @@ function display_script() {
     // print payout
     document.write("payout");
 }   
+
+display_script();
